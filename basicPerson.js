@@ -1,3 +1,10 @@
+//introduce yourself, ask sutdents to say their name
+//it's a hard topic, understand the concepts that are the foundation of prototypes
+//agenda (remember the concepts)
+//zoom out to really big picutre, why are we learning this
+//examples of prototypical synonyms and relationship
+
+
 /***** function and object examples *****/
 
 function sayHello () {
@@ -30,16 +37,15 @@ var erica = {
 // - Katie could be a robot, Erica could be a person, a ghost, a
 
 
-
-
 /********* we have a singular function   **********/
 
-var sayHello = function () {
-    console.log('Hello!');
-};
-
-var sayGoodbye = function () {
-    console.log('Goodbye!');
+var personMethods = {
+    sayHello: function () {
+        console.log('Hello!');
+    },
+    sayGoodbye: function () {
+        console.log('Goodbye!');
+    }
 };
 
 function Person (name, age) {
@@ -51,8 +57,8 @@ function Person (name, age) {
     person.age = age;
 
     //method
-    person.sayHello = sayHello;
-    person.sayGoodbye = sayGoodbye;
+    person.sayHello = personMethods.sayHello;
+    person.sayGoodbye = personMethods.sayGoodbye;
 
     return person;
 }
@@ -64,8 +70,6 @@ var erica = Person('Erica', 30);
 // what two lines of code can we write to make a katie and erica object like before? Pair up?
 // what is still inconvenient about this?
 // - adding another method means writing in two places
-
-
 
 
 
@@ -83,10 +87,14 @@ var personMethods = {
 
 function Person (name, age) {
 
-    var person = Object.create(personMethods);
-    //property
+    let person = Object.create(personMethods);
+    //let person = {};
+    
     person.name = name;
     person.age = age;
+
+    //person.sayHello = personMethods.sayHello;
+    //person.sayGoodbye = personMethods.sayGoodbye;
 
     return person;
 }
@@ -97,6 +105,7 @@ var erica = Person('Erica', 30);
 
 //Inheritance for the first time with Object.Create
 //It creates a new object and tells the Javascript engine where to lookup missing properties. In this case, personMethods object.
+// - can anyone tell us how are code changes from explicit person naming
 
 
 /**

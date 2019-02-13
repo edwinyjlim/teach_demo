@@ -9,7 +9,7 @@ How prototypes chain together and thus enable inheritance
 
 
 
-## The Big Picture
+## The Really Big Picture
 Prototypes are a powerful way to organize, re-use, and express code.
 
 In other words, we can build a lot of things with it.
