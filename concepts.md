@@ -58,12 +58,26 @@ var person = {
 <!-- ``` -->
 
 
+**Prototype**
+```markdown
+*definition:* is a property on a function that points to an object.
+*benefit:* it allows us to share properties across instances of a function.
+```
+
+```javascript
+//an example
+function foo () { };
+
+console.log(typeof foo.prototype === 'object');
+//prints true
+
+```
 
 **Constructor**
 ```markdown
-*definition:* a function that gets called with new.
-Conventionally capatalized.
-*benefit:* it constructs and returns an object
+*definition:* a function that constructs an object, conventionally
+capitalized and typically called with the keyword new.
+*benefit:* it constructs and returns an object.
 ```
 
 ```javascript
@@ -74,35 +88,21 @@ function Person = (name, age) {
 	this.age = age;
 }
 
-//msJackson = new Person('Ms. Jackson', 32);
+msJackson = new Person('Ms. Jackson', 32);
 ```
-    
+
 
 **Instance**
 ```markdown
-*definition:* a distinct object that was constructed
-*benefit:* it is an individual object
+*definition:* a distinct object that was constructed.
+*benefit:* it is an individual object.
 ```
 
 ```javascript
+//an example
 //one instance
 var msJackson = new Person('Ms. Jackson', 32);
 //another instance
 var mrLee = new Person('Mr. Lee', 40);
-
-```
-
-    
-**Prototype**
-```markdown
-*definition:* is a property on a function. It points to an object.
-*benefit:* it allows us to share methods across
-all instances of a function. In other words, those instances
-inherit properties from the prototype.  
-```
-
-```javascript
-
-person.prototype. 
 
 ```
