@@ -26,37 +26,37 @@ In other words, we can build a lot of things with it.
 
 ```javascript
 //an example
+function sayHello () {
+    console.log('Hello!');
+};
 ```
 
 **Object**
 ```markdown
-*definition:* a map of properties, where each property has a name/key and a value.
+*definition:* a map of properties, where each property has
+a name/key and a value.
 *benefit:* it can store and represent things.
 ```
 
 ```javascript
 //an example
+var person = {
+    name: 'Ms. Jackson',
+    age: 32
+}
 ```
 
+<!-- **this** -->
+<!-- ```markdown -->
+<!-- *definition:* a keyword that is bound to an object -->
+<!-- when a function is envoked. -->
+<!-- *benefit:* it enables contextual assignemnt.  -->
+<!-- ``` -->
 
-**Instance**
-```markdown
-*definition:* a distinct object that was constructed
-*benefit:* it is an individual object
-```
-
-```javascript
-```
-
-**this**
-```markdown
-*definition:* a keyword that is bound to an object when a function is envoked.
-*benefit:* it enables contextual assignemnt. 
-```
-
-```javascript
+<!-- ```javascript -->
 	
-```
+<!-- ``` -->
+
 
 
 **Constructor**
@@ -67,14 +67,42 @@ Conventionally capatalized.
 ```
 
 ```javascript
+//an example
+//this is the constructor function 
+function Person = (name, age) {
+	this.name = name;
+	this.age = age;
+}
+
+//msJackson = new Person('Ms. Jackson', 32);
 ```
+    
+
+**Instance**
+```markdown
+*definition:* a distinct object that was constructed
+*benefit:* it is an individual object
+```
+
+```javascript
+//one instance
+var msJackson = new Person('Ms. Jackson', 32);
+//another instance
+var mrLee = new Person('Mr. Lee', 40);
+
+```
+
     
 **Prototype**
 ```markdown
 *definition:* is a property on a function. It points to an object.
-*benefit:* it allows us to share methods across all instances of a function.
-In other words, Those instances inherit properties from the prototype.  
+*benefit:* it allows us to share methods across
+all instances of a function. In other words, those instances
+inherit properties from the prototype.  
 ```
 
 ```javascript
+
+person.prototype. 
+
 ```

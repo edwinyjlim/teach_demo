@@ -1,14 +1,5 @@
-var edwin = {
-    name: 'Edwin',
-    age: 27
-}
-
-var joe = {
-    name: 'Joe',
-    age: 25
-}
+/***
+Hello, my name is Edwin.
 
 
-function NewYorker(borough, name, age, favoriteSportsTeam) {
-
-}
+**/
